@@ -1,0 +1,20 @@
+body {
+font-size: medium;
+font-family: 'Courier New', Courier, monospace;
+text-align: left;
+background-color: #f5f5DC;
+}
+
+h1 {
+    color:mediumseagreen ;
+}
+
+ul {
+    list-style: circle;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
