@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title><%=shopName%></title>
+        <link rel="stylesheet" href="/style.css">
+     </head>
+     <body>
+        <h1>Feedback for Thirsty Student Shop</h1>
+        <p1>Thank you for spending time to fill out this survey</p1>
+
+        <form method="post" action="/submittedForm">
+        First Name:<input id="first" type="text" name="first"/> <br>
+        Surname:<input id="surname" type="text" name="surname"/> <br>
+        Email:<input id="email" type="text" name="email"/> <br>
+        How old are you?:<input type="number" id="age" name="age" placeholder="Enter your age"> <br>
+        <p2>Which of the following drinks categories do you consume?</p2><br>
+        <label>
+            <input type="radio" name="drink" value="beer">
+        Beer
+        </label><br>
+        <label>
+            <input type="radio" name="drink" value="wine">
+        Wine
+        </label><br>
+        <label>
+            <input type="radio" name="drink" value="softDrink">
+        Soft Drink
+        </label><br>
+        <label>
+            <input type="radio" name="drink" value="hotDrink">
+        Hot Drink
+        </label><br>
+
+        Are you a student?: <input type="checkbox" id="student" name="student">
+
+        <input type="submit" value="ENTER">
+        </form>
+     </body>
+</html>

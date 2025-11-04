@@ -30,6 +30,12 @@ router.post("/registered", (req,res) => {
     res.send(' Hello '+ req.body.first + ' '+ req.body.last +' you are now registered!. We will send an email to you at ' + req.body.email);    
 });
 
+router.get("/survey", (req, res)=> {
+    res.render("survey.ejs", shopData);
+})
+router.post("/submittedForm", (req, res) => {
+    res.send('Hi ' + req.body.first + ' ' + req.body.surname+' thank you for spending time to fill out this survey')
+})
 // TODO
 
 // Export the router object so index.js can access it

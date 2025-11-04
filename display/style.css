@@ -8,6 +8,9 @@ background-color: #f5f5DC;
 h1 {
     color:mediumseagreen ;
 }
+h2{
+    color:#5fc38c
+}
 
 ul {
     list-style: circle;
@@ -18,3 +21,6 @@ li {
     display: block;
 }
 
+form{
+    margin-top: 2%;
+}
