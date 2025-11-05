@@ -2,17 +2,41 @@
 <html>
     <head>
         <title><%=shopName%></title>
-        <link rel="stylesheet" href="/style.css">
+       <style>
+        body {
+      font-size: medium;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      background-color: #f5f5DC;
+    }
+
+      h1 {
+    color:mediumseagreen ;
+    margin-top: 50px;
+    }
+
+      p{
+    color:#5fc38c; 
+    }
+    form{
+        color:mediumseagreen ;
+        font-size: 20px; 
+        
+    }
+    input [type="submit"]{
+        cursor: grab;
+    }
+    </style>
     </head>
     <body>
-        <h1>What are you after?</h1>
-        <p>Let us know what you are craving!</p>
+        <h1><%=shopName%> | Search</h1>
+        <p>What are you after?</p>
 
         <form action="/search_result" method="GET">
             <label for="search_box">Name</label>
             <input id="search_box" type="text" name="search_text">
             <input type="submit" value="OK" >
-
+         
             <label for="search_box">Category</label>
             <input id="search_box" type="text" name="category">
             <input type="submit" value="OK" >

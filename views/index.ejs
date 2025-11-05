@@ -2,11 +2,44 @@
 <html>
   <head>
     <title><%=shopName%></title>
-    <link rel="stylesheet" href="/style.css">
+    <style> 
+      body {
+      font-size: medium;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      background-color: #f5f5DC;
+      }
+      
+      
+      h1 {
+          color:mediumseagreen ;
+          margin-top: 50px;
+      }
+      
+      p{
+          color:#5fc38c; 
+      }
+      
+      ul {
+          
+          padding: 0;
+          
+      }
+      
+      li {
+          display: block;
+          color: #5fc38c;
+          cursor: pointer;
+          font-size: 20px;
+          list-style-type: circle;
+          
+      }
+      </style>
+
   </head>
   <body>
-    <h1>Welcome to <%=shopName%> Shop</h1>
-    <h2>Here are some things that we sell:</h2>
+    <h1>Welcome to <%=shopName%> </h1>
+    <p>Here are some things that we sell:</p>
     <ul>
       <% for(let i = 0; i < productCategories.length; i++) { %>
         <li><%= productCategories[i] %></li>

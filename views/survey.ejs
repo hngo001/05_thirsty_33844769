@@ -2,17 +2,78 @@
 <html>
     <head>
         <title><%=shopName%></title>
-        <link rel="stylesheet" href="/style.css">
+            
+        <style>
+            body{
+                background-color: #f5f5DC;
+                font-size: medium;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                color:#5fc38c;
+                display: column;
+                justify-content: center;
+            }
+            h1 {
+                color:mediumseagreen;
+                margin-top: 50px;
+            }
+            p{
+                padding-top: 20px;
+                padding-bottom: 1px;
+            }
+            
+
+        
+          form{  
+          margin: 90px;
+          margin-left: 360px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 35px;
+          padding-right: 35px;
+          border: 5px;
+          outline: thick ridge mediumseagreen ;
+          outline-offset: 30px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          max-width: 700px;
+          text-align: left;
+          }
+
+          .column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          input[type="text"],
+          input[type="number"]{
+            width: 90%;
+            padding: 5px;
+          }
+          .submit-btn{
+            grid-column: span 2;
+            text-align: center;
+          }
+          input[type="submit"]{
+            padding: 8px 20px;
+            cursor: grab;
+         }       
+           </style>
      </head>
      <body>
-        <h1>Feedback for Thirsty Student Shop</h1>
-        <p1>Thank you for spending time to fill out this survey</p1>
+        <h1><%=shopName%> | Feedback</h1>
+        <p>Please let us hear about your experience</p>
 
         <form method="post" action="/submittedForm">
-        First Name:<input id="first" type="text" name="first"/> <br>
-        Surname:<input id="surname" type="text" name="surname"/> <br>
-        Email:<input id="email" type="text" name="email"/> <br>
-        How old are you?:<input type="number" id="age" name="age" placeholder="Enter your age"> <br>
+            <div class="column">
+        First Name: <input id="first" type="text" name="first"/> <br>
+        Surname: <input id="surname" type="text" name="surname"/> <br>
+        Email: <input id="email" type="text" name="email"/> <br>
+        How old are you?: <input type="number" id="age" name="age" placeholder="Enter your age"> <br>
+            </div>
+
+            <div class="column">
         <p2>Which of the following drinks categories do you consume?</p2><br>
         <label>
             <input type="radio" name="drink" value="beer">
@@ -30,10 +91,17 @@
             <input type="radio" name="drink" value="hotDrink">
         Hot Drink
         </label><br>
+        <br>
+        <label>
+            Are you a student?:
+            <input type="checkbox" id="student" name="student">
+        </label>
+    
+    </div>
 
-        Are you a student?: <input type="checkbox" id="student" name="student">
-
+    <div class="submit-btn">
         <input type="submit" value="ENTER">
+    </div>
         </form>
      </body>
 </html>

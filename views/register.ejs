@@ -2,20 +2,67 @@
 <html>  
   <head>  
     <title><%=shopName%></title> 
-    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+     font-size: medium;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     background-color: #f5f5DC;
+      }
+        h1 {
+     color:mediumseagreen ;
+     margin-top: 50px;
+      }
+        p{
+     color:#5fc38c;
+     margin:10px;
+     padding: 10px;
+      }
+
+      form{
+        margin-right: 520px;
+        margin-left: 520px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border: 5px;
+        outline: thick ridge mediumseagreen ;
+        outline-offset: 10px;
+        text-align: left;
+        color:#5fc38c;
+        
+      }
+      .submit-btn{
+        text-align: center;
+        color: mediumseagreen;
+    
+
+      }
+      input[type="submit"]{
+            cursor: grab;
+        
+    }    
+       
+    </style>
   </head>  
   <body>  
-    <h1> Register for The Thirsty Student </h1>
-    <p1> Please fill in this form to register</p1> <br>
+    <h1> <%=shopName%> | Registry</h1>
+    <p> Please fill in this form to register</p> <br>
     
     <form method="POST" action="/registered"> 
-        First Name:<input id="first" type="text" name="first"/> <br>
+        First Name:  
+        <input id="first" type="text" name="first"/> <br>
         <br>
-        Last Name:<input id="last" type="text" name="last" /> <br>
+        Last Name: 
+         <input id="last" type="text" name="last" /> <br>
         <br>
-        Email:<input id="email" type="text" name="email" /> <br>
+        Email:  
+        <input id="email" type="text" name="email" /> <br>
         <br>
+        <div class="submit-btn">
         <input type="submit" value="OK" /> 
+    </div>
     </form> 
 </body>  
 </html> 

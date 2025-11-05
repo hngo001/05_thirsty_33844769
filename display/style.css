@@ -1,15 +1,19 @@
 body {
 font-size: medium;
-font-family: 'Courier New', Courier, monospace;
-text-align: left;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
 background-color: #f5f5DC;
 }
+
 
 h1 {
     color:mediumseagreen ;
 }
 h2{
-    color:#5fc38c
+    color:#5fc38c;
+}
+p, p1{
+    color:#5fc38c; 
 }
 
 ul {
@@ -19,8 +23,10 @@ ul {
 
 li {
     display: block;
+    color: #5fc38c;
 }
 
 form{
     margin-top: 2%;
+    
 }

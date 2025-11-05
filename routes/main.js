@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 // Define our data
-var shopData = {shopName: "The Thirsty Student",
+var shopData = {shopName: "The Thirsty Student Shop",
     productCategories: ["Beer", "Wine", "Soft Drink", "Hot Drink"]
 };
 
@@ -27,14 +27,14 @@ router.get("/about", (req, res) => {
 });
  
 router.post("/registered", (req,res) => { 
-    res.send(' Hello '+ req.body.first + ' '+ req.body.last +' you are now registered!. We will send an email to you at ' + req.body.email);    
+    res.send(' Hello '+ req.body.first + ' '+ req.body.last +' you are now registered!. We will send an email to you at ' + req.body.email + '.');    
 });
 
 router.get("/survey", (req, res)=> {
     res.render("survey.ejs", shopData);
 })
 router.post("/submittedForm", (req, res) => {
-    res.send('Hi ' + req.body.first + ' ' + req.body.surname+' thank you for spending time to fill out this survey')
+    res.send('Hi ' + req.body.first + ' ' + req.body.surname+' thank you for spending time to fill out this survey!')
 })
 // TODO
 
