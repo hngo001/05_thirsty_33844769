@@ -1,0 +1,1 @@
+Thirsty Student Shop is a more advance application.
